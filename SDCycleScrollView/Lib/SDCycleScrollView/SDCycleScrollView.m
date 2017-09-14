@@ -232,6 +232,7 @@ NSString * const ID = @"cycleCell";
     
     if ([self.pageControl isKindOfClass:[TAPageControl class]]) {
         TAPageControl *pageControl = (TAPageControl *)_pageControl;
+        pageControl.spacingBetweenDots = 0;
         if (isCurrentPageDot) {
             pageControl.currentDotImage = image;
         } else {
